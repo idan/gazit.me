@@ -1,0 +1,19 @@
+@import './Elena.css';
+@import './Concourse.css';
+
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+body {
+  @apply font-serif;
+}
+
+code {
+  @apply font-light;
+  font-feature-settings: 'calt' 1; /* Enable ligatures for IE 10+, Edge */
+  text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
+}

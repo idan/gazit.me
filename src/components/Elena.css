@@ -1,0 +1,93 @@
+/* Elena Web Basic Light */
+@font-face {
+  font-family: 'ElenaWebBasic';
+  src: url('../fonts/ElenaWebBasicLight.eot');
+  src: url('../fonts/ElenaWebBasicLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ElenaWebBasicLight.woff2') format('woff2'),
+    url('../fonts/ElenaWebBasicLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Elena Web Basic Light Italic */
+@font-face {
+  font-family: 'ElenaWebBasic';
+  src: url('../fonts/ElenaWebBasicLightItalic.eot');
+  src: url('../fonts/ElenaWebBasicLightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/ElenaWebBasicLightItalic.woff2') format('woff2'),
+    url('../fonts/ElenaWebBasicLightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Elena Web Basic Regular */
+@font-face {
+  font-family: 'ElenaWebBasic';
+  src: url('../fonts/ElenaWebBasicRegular.eot');
+  src: url('../fonts/ElenaWebBasicRegular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/ElenaWebBasicRegular.woff2') format('woff2'),
+    url('../fonts/ElenaWebBasicRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Elena Web Basic Regular Italic */
+@font-face {
+  font-family: 'ElenaWebBasic';
+  src: url('../fonts/ElenaWebBasicRegularItalic.eot');
+  src: url('../fonts/ElenaWebBasicRegularItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/ElenaWebBasicRegularItalic.woff2') format('woff2'),
+    url('../fonts/ElenaWebBasicRegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Elena Web Basic Medium */
+@font-face {
+  font-family: 'ElenaWebBasic';
+  src: url('../fonts/ElenaWebBasicMedium.eot');
+  src: url('../fonts/ElenaWebBasicMedium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/ElenaWebBasicMedium.woff2') format('woff2'),
+    url('../fonts/ElenaWebBasicMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Elena Web Basic Medium Italic */
+@font-face {
+  font-family: 'ElenaWebBasic';
+  src: url('../fonts/ElenaWebBasicMediumItalic.eot');
+  src: url('../fonts/ElenaWebBasicMediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/ElenaWebBasicMediumItalic.woff2') format('woff2'),
+    url('../fonts/ElenaWebBasicMediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Elena Web Basic Bold */
+@font-face {
+  font-family: 'ElenaWebBasic';
+  src: url('../fonts/ElenaWebBasicBold.eot');
+  src: url('../fonts/ElenaWebBasicBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ElenaWebBasicBold.woff2') format('woff2'),
+    url('../fonts/ElenaWebBasicBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Elena Web Basic Bold Italic */
+@font-face {
+  font-family: 'ElenaWebBasic';
+  src: url('../fonts/ElenaWebBasicBoldItalic.eot');
+  src: url('../fonts/ElenaWebBasicBoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/ElenaWebBasicBoldItalic.woff2') format('woff2'),
+    url('../fonts/ElenaWebBasicBoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
