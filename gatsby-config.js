@@ -13,9 +13,25 @@ module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-postcss',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-remark-images',
     {
       resolve: 'gatsby-plugin-mdx',
       extensions: ['.mdx', '.md'],
+      options: {
+        remarkPlugins: [require('remark-abbr')],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1200,
+            },
+          },
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-containers',
+        ],
+      },
     },
     // 'gatsby-plugin-feed-mdx',
     'gatsby-plugin-react-helmet',
@@ -33,8 +49,6 @@ module.exports = {
         path: `${__dirname}/writing`,
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -47,6 +61,7 @@ module.exports = {
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
+
     'gatsby-plugin-client-side-redirect',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -1,30 +1,18 @@
-import { graphql, useStaticQuery } from 'gatsby'
 import React, { FunctionComponent } from 'react'
-import './layout.css'
+import Footer from './Footer'
+import Header from './Header'
 
 type LayoutProps = {
   children?: React.ReactNode
+  title?: string
 }
 
-const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const Layout: FunctionComponent<LayoutProps> = ({ title, children }) => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
-        <main>{children}</main>
-        <footer className="py-5 uppercase font-light tracking-widest text-xs text-gray-600 font-caps">
-          © {new Date().getFullYear()} Idan Gazit &bull; All rights reserved
-        </footer>
-      </div>
+    <div>
+      <Header title={title} />
+      <div>{children}</div>
+      <Footer />
     </div>
   )
 }

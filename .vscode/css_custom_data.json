@@ -9,6 +9,16 @@
           "url": "https://tailwindcss.com/docs/functions-and-directives/#tailwind"
         }
       ]
+    },
+    {
+      "name": "@screen",
+      "description": "Use the @screen directive to apply Tailwind's responsive breakpoints",
+      "references": [
+        {
+          "name": "Tailwind’s “Functions & Directives” documentation",
+          "url": "https://tailwindcss.com/docs/functions-and-directives/#screen"
+        }
+      ]
     }
   ]
 }
