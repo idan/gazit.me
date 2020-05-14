@@ -67,7 +67,7 @@ module.exports = {
         domainId: '5d975d6d-5505-4824-b554-4193f3873208',
         server: 'https://idan-ackee.herokuapp.com',
         ignoreLocalhost: true,
-        detailed: false,
+        detailed: true,
       },
     },
     'gatsby-plugin-client-side-redirect',
