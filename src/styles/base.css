@@ -12,6 +12,10 @@ body {
   @apply font-serif;
 }
 
+::selection {
+  background-color: #c5cca0;
+}
+
 code {
   @apply font-light;
   font-feature-settings: 'calt' 1; /* Enable ligatures for IE 10+, Edge */
