@@ -61,7 +61,14 @@ module.exports = {
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
-
+    {
+      resolve: 'gatsby-plugin-ackee-tracker',
+      options: {
+        domainId: '5d975d6d-5505-4824-b554-4193f3873208',
+        server: 'https://idan-ackee.herokuapp.com',
+        detailed: true,
+      },
+    },
     'gatsby-plugin-client-side-redirect',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
