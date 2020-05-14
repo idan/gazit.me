@@ -19,7 +19,9 @@ const NotFoundPage = () => {
       </p>
       <p>
         <span className="text-warmGrey-500">&rarr;</span> Try visiting{' '}
-        <a href={`/oldsite${path}`}>gazit.me/oldsite</a>
+        <a href={`https://idan.github.io/oldsite${path}`}>
+          idan.github.io/oldsite
+        </a>
       </p>
 
       <p className="font-caps text-sm text-warmGrey-500 uppercase pb-3 pt-6">
