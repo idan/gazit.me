@@ -115,8 +115,8 @@ export const pageQuery = graphql`
     }
     avatar: file(relativePath: { eq: "idan-sketch.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
