@@ -7,5 +7,6 @@
   "debug.node.autoAttach": "on",
   "[mdx]": {
     "editor.formatOnSave": false
-  }
+  },
+  "deno.enable": false
 }
