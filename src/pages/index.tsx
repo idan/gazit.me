@@ -25,7 +25,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = ({ data }) => (
         <div className="order-3 text-xl pt-3 text-left max-w-lg mx-auto lg:mx-0 font-light">
           <p className="pb-5">
             I make products that delight and inform. I'm a developer, a
-            designer, a datavis junkie, and a typograpahy nerd. I'm particularly
+            designer, a datavis junkie, and a typography nerd. I'm particularly
             interested in data, the tools we use for working with it, and how we
             use it to tell meaningful stories.
           </p>
