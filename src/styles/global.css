@@ -1,0 +1,494 @@
+/*
+Parclo Serif
+100 Thin
+200
+300 Light
+400 Regular
+500 Medium
+600 Semibold
+700 Bold
+900 Black
+950 Extra Black
+975 Ultra
+*/
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-ExtraBlack.woff2') format('woff2');
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-ExtraBlackItalic.woff2') format('woff2');
+  font-weight: 950;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-Ultra.woff2') format('woff2');
+  font-weight: 975;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parclo Serif';
+  src: url('/fonts/ParcloSerif-UltraItalic.woff2') format('woff2');
+  font-weight: 975;
+  font-style: italic;
+  font-display: swap;
+}
+
+/*
+Really Sans Large
+100 Hairline
+200 Thin
+300 Light
+400 Regular
+500
+600 Semibold
+700 Bold
+900 Black
+950 Extra Black
+975 Ultra
+*/
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Hairline.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-HairlineItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Thin.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-ThinItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Extra-Black.woff2') format('woff2');
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Extra-BlackItalic.woff2') format('woff2');
+  font-weight: 950;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-Ultra.woff2') format('woff2');
+  font-weight: 975;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Large';
+  src: url('/fonts/ReallySansLarge-UltraItalic.woff2') format('woff2');
+  font-weight: 975;
+  font-style: italic;
+  font-display: swap;
+}
+
+/*
+Really Sans Small
+100 
+200 
+300 Light
+400 Regular
+500 Semibold
+600 
+700 Bold
+800
+900 Black
+*/
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-Semibold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-SemiboldItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Really Sans Small';
+  src: url('/fonts/ReallySansSmall-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  @apply font-serif;
+  @apply font-normal;
+}
+
+a {
+  @apply font-semibold;
+  /* @apply underline; */
+  @apply text-warmGrey-800;
+  text-decoration-color: theme('colors.warmGrey.500');
+  /* text-decoration-thickness: 2px; */
+}
+
+a:hover {
+  text-decoration-color: theme('colors.red.500');
+}
+
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+
+/* body {
+  font-family: Verdana, sans-serif;
+  margin: auto;
+  padding: 20px;
+  max-width: 65ch;
+  text-align: left;
+  background-color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  color: #222;
+}
+a {
+  color: #3273dc;
+}
+nav a {
+  margin-right: 10px;
+}
+textarea {
+  width: 100%;
+  font-size: 16px;
+}
+input {
+  font-size: 16px;
+}
+content {
+  line-height: 1.6;
+}
+table {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+code {
+  padding: 2px 5px;
+  background-color: #f2f2f2;
+}
+pre {
+  padding: 1rem;
+}
+pre > code {
+  all: unset;
+}
+blockquote {
+  border: 1px solid #999;
+  color: #222;
+  padding: 2px 0px 2px 20px;
+  margin: 0px;
+  font-style: italic;
+} */
