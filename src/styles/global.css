@@ -320,8 +320,8 @@ Really Sans Small
 200 
 300 Light
 400 Regular
-500 Semibold
-600 
+500 
+600 Semibold
 700 Bold
 800
 900 Black
@@ -362,7 +362,7 @@ Really Sans Small
 @font-face {
   font-family: 'Really Sans Small';
   src: url('/fonts/ReallySansSmall-Semibold.woff2') format('woff2');
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -370,7 +370,7 @@ Really Sans Small
 @font-face {
   font-family: 'Really Sans Small';
   src: url('/fonts/ReallySansSmall-SemiboldItalic.woff2') format('woff2');
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
@@ -413,82 +413,30 @@ body {
 }
 
 a {
-  @apply font-semibold;
-  /* @apply underline; */
-  @apply text-warmGrey-800;
+  @apply font-medium;
+  @apply underline;
+  @apply text-warmGrey-900;
   text-decoration-color: theme('colors.warmGrey.500');
-  /* text-decoration-thickness: 2px; */
+  text-decoration-thickness: 1px;
+  background: linear-gradient(
+    to right,
+    theme('colors.warmGrey.200') 0%,
+    theme('colors.slate.100') 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-y;
+  background-size: 0%;
+  transition: all 0.4s cubic-bezier(0, 1, 0, 1);
 }
 
 a:hover {
-  text-decoration-color: theme('colors.red.500');
+  /* text-decoration-color: theme('colors.red.500'); */
+  background-size: 100%;
 }
 
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-
-/* body {
-  font-family: Verdana, sans-serif;
-  margin: auto;
-  padding: 20px;
-  max-width: 65ch;
-  text-align: left;
-  background-color: #fff;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5;
-  color: #444;
+.social a {
+  @apply font-sans;
+  @apply font-semibold;
+  @apply text-warmGrey-800;
+  text-decoration-thickness: 1px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-  color: #222;
-}
-a {
-  color: #3273dc;
-}
-nav a {
-  margin-right: 10px;
-}
-textarea {
-  width: 100%;
-  font-size: 16px;
-}
-input {
-  font-size: 16px;
-}
-content {
-  line-height: 1.6;
-}
-table {
-  width: 100%;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-code {
-  padding: 2px 5px;
-  background-color: #f2f2f2;
-}
-pre {
-  padding: 1rem;
-}
-pre > code {
-  all: unset;
-}
-blockquote {
-  border: 1px solid #999;
-  color: #222;
-  padding: 2px 0px 2px 20px;
-  margin: 0px;
-  font-style: italic;
-} */

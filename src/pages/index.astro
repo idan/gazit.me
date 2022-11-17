@@ -1,50 +1,123 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import { Image } from '@astrojs/image/components'
+import BaseHead from '../components/BaseHead.astro'
+import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <div
+      class="flex flex-col lg:flex-row lg:max-w-screen-xl lg:mx-auto items-stretch text-warmGrey-800"
+    >
+      <div class="w-auto lg:max-w-4xl lg:flex-1">
+        <Image
+          src="/idan-sketch.jpg"
+          width={1500}
+          aspectRatio="1:1"
+          alt="A sketch of Idan's face"
+        />
+      </div>
+      <div class="lg:flex-1 px-4">
+        <div class="text-center lg:text-left flex flex-col">
+          <h1 class="order-2 text-4xl pt-3 lg:pt-6 font-bold italic">Ahoy!</h1>
+          <h2
+            class="order-1 font-sans text-sm lg:text-base pt-3 lg:pt-64 uppercase text-warmGrey-700 tracking-wider"
+          >
+            <span class="font-semibold text-warmGrey-900">Idan Gazit</span> makes
+            things in San Francisco.
+          </h2>
+          <div
+            class="order-3 text-xl pt-3 text-left max-w-lg mx-auto lg:mx-0 font-light"
+          >
+            <p class="pb-5">
+              I’m a developer, a designer, a datavis junkie, and a typography
+              nerd. I’m particularly interested in data, the tools we use for
+              working with it, and how we use it to tell meaningful stories.
+            </p>
+            <p class="pb-5">
+              I’m currently a senior director of research at <a
+                href="https://githubnext.com">GitHub Next</a
+              >, where I figure out how to improve the lives of developers while
+              trying to avoid buzzwords about innovation.
+            </p>
+
+            <p class="pb-3 font-sans uppercase social text-sm tracking-wider">
+              <a
+                href="https://vis.social/@idan"
+                rel="me"
+                style="text-decoration-color: #6364ff;">Mastodon</a
+              > &middot;{' '}
+              <a
+                href="https://github.com/idan"
+                style="text-decoration-color: #1b1f24">GitHub</a
+              > &middot;{' '}
+              <a
+                href="https://twitter.com/idangazit"
+                style="text-decoration-color: #1d9bf0">Twitter</a
+              > &middot;{' '}
+              <a
+                href="https://www.linkedin.com/in/idangazit/"
+                style="text-decoration-color: #0a66c2">LinkedIn</a
+              >
+            </p>
+
+            <h3
+              class="pt-6 pb-3 uppercase text-sm tracking-xl font-medium text-warmGrey-900"
+            >
+              Previously
+            </h3>
+            <p class="pb-3">
+              As a principal engineer at{' '}
+              <a class="link" href="https://heroku.com">
+                {' '}Heroku
+              </a>, I was responsible for developing a unified interface to our
+              data products. Prior to that, I was design lead on{' '}
+              <a href="https://devcenter.heroku.com/articles/metrics">
+                Heroku App Metrics
+              </a>, which visualized app performance and addressed customer
+              complaints about the opacity of Heroku.
+            </p>
+
+            <p class="pb-3">
+              I am an alumnus of the{' '}
+              <a class="link" href="https://djangoproject.com">
+                {' '}Django Project
+              </a>{' '}core team, where I was a developer and lead designer for
+              the framework. I delivered the keynote address at Djangocon US
+              2011, and designed visual identities for various PyCons and
+              DjangoCons.
+            </p>
+
+            <p class="pb-3">
+              I was a founding mentor at{' '}
+              <a href="http://www.campustelaviv.com/" class="link"
+                >Google Campus TLV</a
+              >, where I had the opportunity to help hundreds of startups
+              distill their product direction. Google later extended the campus
+              program worldwide.
+            </p>
+
+            <h3
+              class="pt-6 pb-3 uppercase text-sm tracking-widest font-medium text-warmGrey-900"
+            >
+              Writing
+            </h3>
+
+            <footer
+              class="py-5 uppercase font-light tracking-widest text-xs text-gray-600 font-caps"
+            >
+              <span class="whitespace-no-wrap pr-5">
+                © {new Date().getFullYear()} Idan Gazit
+              </span>
+              <span class="whitespace-no-wrap">All rights reserved</span>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
