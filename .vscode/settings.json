@@ -1,9 +1,11 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
-  "css.customData": [".vscode/css_custom_data.json"],
+  "css.customData": [
+    ".vscode/css_custom_data.json"
+  ],
   "debug.node.autoAttach": "on",
   "[mdx]": {
     "editor.formatOnSave": false
