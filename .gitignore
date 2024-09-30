@@ -1,5 +1,5 @@
 # ignore old
-old/
+_old/
 
 # build output
 dist/
