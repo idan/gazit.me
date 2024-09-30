@@ -1,22 +1,31 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '../styles/global.css'
+import '../styles/global.css';
 
-export interface Props {
-  title: string
-  description: string
-  image?: string
+interface Props {
+	title: string;
+	description: string;
+	image?: string;
 }
 
-const { title, description, image = '/idan-sketch.jpg' } = Astro.props
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const { title, description, image = '/idan.jpg' } = Astro.props;
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/jpeg" href="/favicon-512.jpg" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
+
+<!-- Font preloads -->
+<link rel="preload" href="/fonts/ParcloSerif-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/ReallySansSmall-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

@@ -13,147 +13,147 @@ Parclo Serif
 */
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-Thin.woff2') format('woff2');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-Thin.woff2') format('woff2');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-ThinItalic.woff2') format('woff2');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-ThinItalic.woff2') format('woff2');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-LightItalic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-LightItalic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-MediumItalic.woff2') format('woff2');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-MediumItalic.woff2') format('woff2');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-SemiBoldItalic.woff2') format('woff2');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-SemiBoldItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-BoldItalic.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-BoldItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-BlackItalic.woff2') format('woff2');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-BlackItalic.woff2') format('woff2');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-ExtraBlack.woff2') format('woff2');
-  font-weight: 950;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-ExtraBlack.woff2') format('woff2');
+	font-weight: 950;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-ExtraBlackItalic.woff2') format('woff2');
-  font-weight: 950;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-ExtraBlackItalic.woff2') format('woff2');
+	font-weight: 950;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-Ultra.woff2') format('woff2');
-  font-weight: 975;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-Ultra.woff2') format('woff2');
+	font-weight: 975;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Parclo Serif';
-  src: url('/fonts/ParcloSerif-UltraItalic.woff2') format('woff2');
-  font-weight: 975;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Parclo Serif';
+	src: url('/fonts/ParcloSerif-UltraItalic.woff2') format('woff2');
+	font-weight: 975;
+	font-style: italic;
+	font-display: swap;
 }
 
 /*
@@ -171,147 +171,147 @@ Really Sans Large
 */
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Hairline.woff2') format('woff2');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Hairline.woff2') format('woff2');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-HairlineItalic.woff2') format('woff2');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-HairlineItalic.woff2') format('woff2');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Thin.woff2') format('woff2');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Thin.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-ThinItalic.woff2') format('woff2');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-ThinItalic.woff2') format('woff2');
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-LightItalic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-LightItalic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-SemiBoldItalic.woff2') format('woff2');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-SemiBoldItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-BoldItalic.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-BoldItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-BlackItalic.woff2') format('woff2');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-BlackItalic.woff2') format('woff2');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Extra-Black.woff2') format('woff2');
-  font-weight: 950;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Extra-Black.woff2') format('woff2');
+	font-weight: 950;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Extra-BlackItalic.woff2') format('woff2');
-  font-weight: 950;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Extra-BlackItalic.woff2') format('woff2');
+	font-weight: 950;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-Ultra.woff2') format('woff2');
-  font-weight: 975;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-Ultra.woff2') format('woff2');
+	font-weight: 975;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Large';
-  src: url('/fonts/ReallySansLarge-UltraItalic.woff2') format('woff2');
-  font-weight: 975;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Large';
+	src: url('/fonts/ReallySansLarge-UltraItalic.woff2') format('woff2');
+	font-weight: 975;
+	font-style: italic;
+	font-display: swap;
 }
 
 /*
@@ -328,115 +328,181 @@ Really Sans Small
 */
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-LightItalic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-LightItalic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-Semibold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-Semibold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-SemiboldItalic.woff2') format('woff2');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-SemiboldItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-BoldItalic.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-BoldItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Really Sans Small';
-  src: url('/fonts/ReallySansSmall-BlackItalic.woff2') format('woff2');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+	font-family: 'Really Sans Small';
+	src: url('/fonts/ReallySansSmall-BlackItalic.woff2') format('woff2');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
 }
+
+/*
+The CSS in this style tag is based off of Bear Blog's default CSS.
+https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
 
 body {
-  @apply font-serif;
-  @apply font-normal;
+	@apply font-serif;
+	@apply font-normal;
+	@apply bg-primary-900;
+	@apply text-primary-100;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
-
+/* main {
+	width: 720px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	color: rgb(var(--black));
+	line-height: 1.2;
+}
+h1 {
+	font-size: 3.052em;
+}
+h2 {
+	font-size: 2.441em;
+}
+h3 {
+	font-size: 1.953em;
+}
+h4 {
+	font-size: 1.563em;
+}
+h5 {
+	font-size: 1.25em;
+}
+strong,
+b {
+	font-weight: 700;
+} */
 a {
-  @apply font-medium;
-  @apply underline;
-  @apply text-warmGrey-900;
-  text-decoration-color: theme('colors.warmGrey.500');
-  text-decoration-thickness: 1px;
-  background: linear-gradient(
-    to right,
-    theme('colors.warmGrey.200') 0%,
-    theme('colors.slate.100') 100%
-  );
-  background-position: 0 100%;
-  background-repeat: repeat-y;
-  background-size: 0%;
-  transition: all 0.4s cubic-bezier(0, 1, 0, 1);
+	@apply font-medium;
+	@apply underline;
+	@apply text-primary-100;
+	@apply decoration-primary-600;
+	text-decoration-thickness: 1px;
+	text-decoration-skip-ink: all;
+	text-underline-offset: 0.15em;
+	transition: all 0.3s ease-out;
+	@apply shadow-primary-500;
+	text-shadow: 0 0 0px var(--tw-shadow-color);
+	
 }
-
 a:hover {
-  /* text-decoration-color: theme('colors.red.500'); */
-  background-size: 100%;
+	@apply decoration-primary-300;
+	@apply text-primary-50;
+	text-shadow: 0 0 25px var(--tw-shadow-color);
 }
 
-.social a {
-  @apply font-sans;
-  @apply font-semibold;
-  @apply text-warmGrey-800;
-  text-decoration-thickness: 1px;
+img.idan {
+	mask-image: url('/images/idan_floating_mask.png');
+	mask-type: luminance;
+	mask-size: 100% 100%;
+}
+
+#pronounciation {
+	&>* {
+		@apply text-[0.9em];
+		transition: all 0.2s ease-out;
+	}
+	&[data-pronounciation='1'] > #syllable1 {
+		@apply text-amber-200;
+		@apply text-[1em]; 
+	}
+	&[data-pronounciation='2'] > #syllable2 { 
+		@apply text-amber-200;
+		@apply text-[1em]; 
+	}
+	&[data-pronounciation='3'] > #syllable3 {
+		@apply text-amber-200; 
+		@apply text-[1em]; 
+	}
+	&[data-pronounciation='4'] > #syllable4 {
+		@apply text-amber-200;
+		@apply text-[1em]; 
+	}
 }

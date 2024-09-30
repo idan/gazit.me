@@ -1,5 +1,10 @@
+# ignore old
+old/
+
 # build output
 dist/
+# generated types
+.astro/
 
 # dependencies
 node_modules/
@@ -17,3 +22,6 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# jetbrains setting folder
+.idea/

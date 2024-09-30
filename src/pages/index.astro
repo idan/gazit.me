@@ -1,117 +1,159 @@
 ---
-import { Image } from '@astrojs/image/components'
-import BaseHead from '../components/BaseHead.astro'
-import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
+import { Volume2Icon } from 'astro-feather';
+import { Image } from 'astro:assets';
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import idanImage from './_idan.jpg';
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <div
-      class="flex flex-col lg:flex-row lg:max-w-screen-xl lg:mx-auto items-stretch text-warmGrey-800"
-    >
-      <div class="w-auto lg:max-w-4xl lg:flex-1">
-        <Image
-          src="/idan-sketch.jpg"
-          width={1500}
-          aspectRatio="1:1"
-          alt="A sketch of Idan's face"
-          loading="eager"
-        />
-      </div>
-      <div class="lg:flex-1 px-4">
-        <div class="text-center lg:text-left flex flex-col">
-          <h1 class="order-2 text-4xl pt-3 lg:pt-6 font-bold italic">Ahoy!</h1>
-          <h2
-            class="order-1 font-sans text-sm lg:text-base pt-3 lg:pt-64 min-[500px]:max-w-full min-[500px]:mx-0 mx-auto max-w-[260px] uppercase text-warmGrey-700 tracking-wider"
-          >
-            <span class="font-semibold text-warmGrey-900">Idan Gazit</span> makes
-            things for people who make things.
-          </h2>
-          <div
-            class="order-3 text-xl pt-3 text-left max-w-lg mx-auto lg:mx-0 font-light"
-          >
-            <p class="pb-5">
-              I’m a hybrid who likes to make products; one part developer, one
-              part designer. I’ve spent my career working on creative tools and
-              platforms. I’m a big believer in the web, and I often nerd out
-              about typography, data visualization, and electronics.
-            </p>
-            <p class="pb-5">
-              I’m currently a senior director of research at <a
-                href="https://githubnext.com">GitHub Next</a
-              >, where I figure out how to improve the lives of developers while
-              trying to avoid buzzwords about innovation.
-            </p>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<div
+		class="flex flex-col lg:flex-row lg:max-w-screen-xl lg:mx-auto items-stretch text-primary-100"
+		>
+			<div class="w-auto lg:max-w-lg flex-grow-0 lg:pt-40 max-w-[50vw] mx-auto">
+				<Image src={idanImage} alt="A sketch of Idan's face" loading='eager' class="idan"/>
+			</div>
+			<div class="flex-1 px-4 lg:pt-40">
+				<div class="text-center lg:text-left flex flex-col">
+					<h1 class="order-2 text-4xl pt-3 lg:pt-6 font-bold italic text-primary-400 tracking-tight">Hello!</h1>
+					<h2
+						class="order-1 font-sans text-sm lg:text-base pt-3 min-[500px]:max-w-full min-[500px]:mx-0 mx-auto max-w-[260px] uppercase text-primary-400 tracking-wider"
+					>
+						<span class=" text-primary-50">Idan Gazit</span> makes
+						things for people who make things.
+					</h2>
+					<div
+						class="order-3 text-xl pt-3 text-left max-w-lg mx-auto lg:mx-0 font-light"
+					>
+						<p class="pb-5">
+						I’m a hybrid and a maker; one part developer, one
+						part designer. I’ve spent my career working on creative tools and
+						platforms. I’m a big believer in the web, and I often nerd out
+						about typography, data visualization, and electronics.
+						</p>
+						<p class="pb-5">
+						I am one of the founding members of <a href="https://githubnext.com">GitHub Next</a>, 
+						where I am currently a Senior Director of Research. I figure out how to improve the lives of developers while
+						trying to avoid buzzwords about innovation.
+						</p>
 
-            <p class="pb-3 font-sans uppercase social text-sm tracking-wider">
-              <a
-                href="https://babka.social/@idan"
-                rel="me"
-                style="text-decoration-color: #6364ff;">Mastodon</a
-              > &middot;{' '}
-              <a
-                href="https://github.com/idan"
-                rel="me"
-                style="text-decoration-color: #1b1f24">GitHub</a
-              > &middot;{' '}
-              <a
-                href="https://www.linkedin.com/in/idangazit/"
-                rel="me"
-                style="text-decoration-color: #0a66c2">LinkedIn</a
-              >
-            </p>
+						<div class="pb-5 flex flex-row items-baseline">
+							<p class="pr-2 flex-grow-0">
+								Pronounced:
+							</p>
+							<div id="pronounciation" class="italic text-primary-50 inline-block flex-none"><span id="syllable1">EE</span>-<span id="syllable2">dahn</span> <span id="syllable3">Gah</span>-<span id="syllable4">ZEET</span></div>
+							<button id="play-name" class="align-bottom self-stretch ml-2 p-1 rounded-md hover:bg-primary-800 flex-none"><Volume2Icon size={20} strokeWidth={1}/></button>
 
-            <h3
-              class="pt-6 pb-3 uppercase text-sm tracking-xl font-medium text-warmGrey-900"
-            >
-              Previously
-            </h3>
-            <p class="pb-3">
-              As a principal engineer at{' '}
-              <a class="link" href="https://heroku.com">
-                {' '}Heroku
-              </a>, I was responsible for developing a unified interface to our
-              data products. Prior to that, I was design lead on{' '}
-              <a href="https://devcenter.heroku.com/articles/metrics">
-                Heroku App Metrics
-              </a>, which visualized app performance and addressed customer
-              complaints about the opacity of Heroku.
-            </p>
-
-            <p class="pb-3">
-              I am an alumnus of the{' '}
-              <a class="link" href="https://djangoproject.com">
-                {' '}Django Project
-              </a>{' '}core team, where I was a developer and lead designer for
-              the framework. I delivered the keynote address at Djangocon US
-              2011, and designed visual identities for various PyCons and
-              DjangoCons.
-            </p>
-
-            <p class="pb-3">
-              I was a founding mentor at{' '}
-              <a href="http://www.campustelaviv.com/" class="link"
-                >Google Campus TLV</a
-              >, where I had the opportunity to help hundreds of startups
-              distill their product direction. Google later extended the campus
-              program worldwide.
-            </p>
-
-            <footer
-              class="py-5 uppercase font-light tracking-widest text-xs text-gray-600 font-caps"
-            >
-              <span class="whitespace-no-wrap pr-5">
-                © {new Date().getFullYear()} Idan Gazit
-              </span>
-              <span class="whitespace-no-wrap">All rights reserved</span>
-            </footer>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+						</div>
+			
+						<p class="pb-3 font-sans uppercase social text-sm tracking-wider">
+							
+						<a
+							href="https://babka.social/@idan"
+							rel="me"
+							>Mastodon</a
+						> &middot;{' '}
+						<a
+							href="https://github.com/idan"
+							rel="me"
+							>GitHub</a
+						> &middot;{' '}
+						<a
+							href="https://www.linkedin.com/in/idangazit/"
+							rel="me"
+							>LinkedIn</a
+						>
+						</p>
+			
+						<h3
+						class="pt-6 pb-3 uppercase text-sm tracking-xl font-medium"
+						>
+						Previously
+						</h3>
+						<p class="pb-3">
+						As a principal engineer at{' '}
+						<a class="link" href="https://heroku.com">Heroku</a>, 
+						I started the Data UX team, which crafted the human interfaces to Heroku’s data offerings (Postgres, Redis, Kafka, and Cassandra).
+						Prior to that, I led the design of
+						<a href="https://devcenter.heroku.com/articles/metrics">Heroku App Metrics</a>, 
+						which visualized app performance while addressing customer
+						complaints about the opacity of Heroku.
+						</p>
+			
+						<p class="pb-3">
+						I am an alumnus of the{' '}
+						<a class="link" href="https://djangoproject.com">Django Project</a> 
+						core team, where I was a developer and lead designer for
+						the framework. I delivered the keynote address at Djangocon US
+						2011, and designed visual identities for various PyCons and
+						DjangoCons.
+						</p>
+			
+						<p class="pb-3">
+						I was a founding mentor at{' '}
+						<a href="http://www.campustelaviv.com/" class="link"
+							>Google Campus TLV</a
+						>, where I had the opportunity to help hundreds of startups
+						distill their product direction. Google later extended the campus
+						program worldwide.
+						</p>
+			
+						<footer
+						class="py-5 uppercase tracking-widest text-sm text-primary-400 font-caps"
+						>
+						<span class="whitespace-no-wrap pr-5">
+							© {new Date().getFullYear()} Idan Gazit
+						</span>
+						<span class="whitespace-no-wrap">All rights reserved</span>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
+
+<script>
+let isPlaying = false;
+const audio = new Audio('/idan.mp3');
+const playEl = document.getElementById('play-name')!;
+const pronounciationEl = document.getElementById('pronounciation')!;
+
+const stopAudio = () => {
+	audio.pause();
+	audio.currentTime = 0;
+	isPlaying = false;
+};
+
+audio.addEventListener('timeupdate', function() {
+	const currentTime = audio.currentTime;
+	if (currentTime < 0.4) {
+		pronounciationEl.dataset.pronounciation = '1'
+	} else if (currentTime >= 0.4 && currentTime < 0.7) {
+		pronounciationEl.dataset.pronounciation = '2'
+	} else if (currentTime >= 0.7 && currentTime < 0.966) {
+		pronounciationEl.dataset.pronounciation = '3'
+	} else if (currentTime >= 0.966) {
+		pronounciationEl.dataset.pronounciation = '4'
+	}
+}, false);
+
+audio.addEventListener('ended', function() {
+	delete pronounciationEl.dataset.pronounciation
+}, false);
+
+
+playEl.addEventListener('click', function() {
+	if (isPlaying) {
+		stopAudio();
+		return;
+	};
+	
+	audio.play();
+});
+</script>
