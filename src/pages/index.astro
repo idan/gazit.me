@@ -50,7 +50,7 @@ import idanImage from './_idan.jpg';
 
 						</div>
 			
-						<p class="pb-3 font-sans uppercase social text-sm tracking-wider">
+						<p class="pb-3 font-sans uppercase social text-sm tracking-wider font-normal">
 							
 						<a
 							href="https://babka.social/@idan"
@@ -103,7 +103,7 @@ import idanImage from './_idan.jpg';
 						</p>
 			
 						<footer
-						class="py-5 uppercase tracking-widest text-sm text-primary-400 font-caps"
+						class="py-5 uppercase tracking-widest text-sm text-primary-400 font-caps font-normal"
 						>
 						<span class="whitespace-no-wrap pr-5">
 							© {new Date().getFullYear()} Idan Gazit
@@ -156,3 +156,9 @@ playEl.addEventListener('click', function() {
 	audio.play();
 });
 </script>
+
+<style lang="postcss">
+	a[rel="me"] {
+		@apply font-normal
+	}
+</style>
