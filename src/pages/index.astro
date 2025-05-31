@@ -4,6 +4,12 @@ import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import idanImage from './_idan.jpg';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const allBlogPosts = (await getCollection('blog'))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const recentBlogPosts = allBlogPosts.slice(0, 3);
 ---
 
 <!doctype html>
@@ -40,6 +46,32 @@ import idanImage from './_idan.jpg';
                                                 the first widely-adopted application of generative AI. Mostly, this job is about improving the
                                                 lives of developers while avoiding buzzwords about innovation.
 						</p>
+
+						<div class="pt-6">
+							<h3 class="text-xl font-semibold mb-4">Latest Thoughts</h3>
+							<ul class="list-none p-0 m-0">
+								{recentBlogPosts.map(post => (
+									<li class="mb-3">
+										<a href={`/blog/${post.slug}/`} class="text-primary-50 hover:text-primary-400">
+											<h4 class="text-lg font-medium">{post.data.title}</h4>
+											<p class="text-sm text-primary-300">
+												<FormattedDate date={post.data.pubDate} />
+											</p>
+										</a>
+										{post.data.description && (
+											<p class="text-sm text-primary-200 mt-1">{post.data.description}</p>
+										)}
+									</li>
+								))}
+							</ul>
+							{allBlogPosts.length > 3 && (
+								 <p class="mt-4">
+									 <a href="/blog" class="text-primary-50 hover:text-primary-400 underline">
+										 Read all posts &rarr;
+									 </a>
+								 </p>
+							)}
+						</div>
 
 						<div class="pb-5 flex flex-row items-baseline">
 							<p class="pr-2 flex-grow-0">
