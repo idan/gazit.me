@@ -3,7 +3,9 @@
     "allow": [
       "Bash(npm view:*)",
       "WebFetch(domain:docs.astro.build)",
-      "Bash(pnpm view:*)"
+      "Bash(pnpm view:*)",
+      "Bash(ls:*)",
+      "Bash(tr:*)"
     ],
     "deny": []
   }

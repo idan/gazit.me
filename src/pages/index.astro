@@ -3,7 +3,7 @@ import { Volume2Icon } from 'astro-feather';
 import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import idanImage from './_idan.jpg';
+import idanImage from '../assets/idan.jpg';
 ---
 
 <!doctype html>
@@ -16,7 +16,7 @@ import idanImage from './_idan.jpg';
 		class="flex flex-col lg:flex-row lg:max-w-screen-xl lg:mx-auto items-stretch text-primary-100"
 		>
 			<div class="w-auto lg:max-w-lg flex-grow-0 lg:pt-40 max-w-[50vw] mx-auto">
-				<Image src={idanImage} alt="A sketch of Idan's face" loading='eager' class="idan"/>
+				<Image src={idanImage} alt="A sketch of Idan's face" loading="eager" fetchpriority="high" class="idan"/>
 			</div>
 			<div class="flex-1 px-4 lg:pt-40">
 				<div class="text-center lg:text-left flex flex-col">
@@ -158,7 +158,8 @@ playEl.addEventListener('click', function() {
 </script>
 
 <style lang="postcss">
+	@reference "tailwindcss";
 	a[rel="me"] {
-		@apply font-normal
+		@apply font-normal;
 	}
 </style>

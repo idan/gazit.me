@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary-50: #F6F2F8;
+  --color-primary-100: #EAE1EF;
+  --color-primary-200: #D7C6E1;
+  --color-primary-300: #C1A8D1;
+  --color-primary-400: #AF8DC3;
+  --color-primary-500: #996FB3;
+  --color-primary-600: #8354A0;
+  --color-primary-700: #6D4686;
+  --color-primary-800: #553768;
+  --color-primary-900: #3E284C;
+  --color-primary-950: #1E1325;
+
+  --font-size-xxs: .625rem;
+  --font-size-7xl: 5rem;
+  --font-size-8xl: 6rem;
+
+  --font-serif: "Parclo Serif", serif;
+  --font-sans: "Really Sans Small", sans-serif;
+  --font-caps: "Really Sans Large", sans-serif;
+
+  --letter-spacing-xl: 0.2em;
+}
+
+
+
+
 /*
 Parclo Serif
 100 Thin
