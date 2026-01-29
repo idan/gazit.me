@@ -2,6 +2,7 @@
 import { Volume2Icon } from 'astro-feather';
 import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
+import LatestBlueskyPost from '../components/LatestBlueskyPost.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import idanImage from '../assets/idan.jpg';
 ---
@@ -107,6 +108,10 @@ import idanImage from '../assets/idan.jpg';
 						distill their product direction. Google later extended the campus
 						program worldwide.
 						</p>
+
+						<div class="pt-6 pb-6">
+							<LatestBlueskyPost handle="gazit.me" />
+						</div>
 			
 						<footer
 						class="py-5 uppercase tracking-widest text-sm text-primary-400 font-sans font-normal"
