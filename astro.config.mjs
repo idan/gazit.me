@@ -9,5 +9,6 @@ export default defineConfig({
     integrations: [mdx(), sitemap()],
     vite: {
       plugins: [tailwindcss()],
+      server: { host: '0.0.0.0' },
     }
 });
