@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     site: 'https://gazit.me',
     integrations: [mdx(), sitemap()],
+    compressHTML: true,
     vite: {
       plugins: [tailwindcss()],
       server: { host: '0.0.0.0' },
