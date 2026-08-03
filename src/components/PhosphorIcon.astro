@@ -1,0 +1,43 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import {
+	getPhosphorIcon,
+	type PhosphorIconName,
+	type PhosphorWeight,
+} from '../lib/phosphor-icons';
+
+interface Props extends Omit<HTMLAttributes<'svg'>, 'name'> {
+	name: PhosphorIconName;
+	weight?: PhosphorWeight;
+	size?: number | string;
+	label?: string;
+}
+
+const {
+	name,
+	weight = 'regular',
+	size = '1em',
+	label,
+	...attributes
+} = Astro.props;
+const Icon = getPhosphorIcon(name, weight);
+
+if (!Icon) {
+	throw new Error(
+		`Phosphor icon “${name}” is not registered at weight “${weight}”. Add its SVG import to src/lib/phosphor-icons.ts.`,
+	);
+}
+
+const accessibleLabel = label ?? attributes['aria-label'];
+const isLabelled = Boolean(accessibleLabel || attributes['aria-labelledby']);
+---
+
+<Icon
+	{...attributes}
+	width={attributes.width ?? size}
+	height={attributes.height ?? size}
+	role={isLabelled ? (attributes.role ?? 'img') : attributes.role}
+	aria-label={accessibleLabel}
+	aria-hidden={isLabelled ? undefined : (attributes['aria-hidden'] ?? 'true')}
+	focusable={attributes.focusable ?? 'false'}
+/>

@@ -32,3 +32,14 @@ Required frontmatter:
 Optional fields are updatedDate, heroImage, and draft. Keep posts no more
 than one directory deep, and do not give a standalone post the same slug as
 a subcollection.
+
+Icons in post content require MDX. Import the local wrapper with:
+
+  import PhosphorIcon from '@components/PhosphorIcon.astro';
+
+Then render a registered icon:
+
+  <PhosphorIcon name="speaker-high" size={20} />
+
+Before using a new icon or weight, add its explicit SVG import and registry
+entry to src/lib/phosphor-icons.ts. This keeps unused icons out of the build.
