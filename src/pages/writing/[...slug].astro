@@ -1,0 +1,101 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import DefaultCollectionLayout from '../../layouts/WritingCollection.astro';
+import WritingPostLayout from '../../layouts/WritingPost.astro';
+import {
+	formatSubcollectionName,
+	getSubcollectionSlug,
+	getSubcollectionSlugs,
+	getWritingPosts,
+	getWritingSubcollections,
+	type WritingPost,
+	type WritingSubcollection,
+} from '../../lib/writing';
+
+interface PostProps {
+	kind: 'post';
+	post: CollectionEntry<'writing'>;
+	subcollections: WritingSubcollection[];
+}
+
+interface SubcollectionProps {
+	kind: 'subcollection';
+	subcollectionSlug: string;
+	collection?: WritingSubcollection;
+	posts: WritingPost[];
+	subcollections: WritingSubcollection[];
+}
+
+type Props = PostProps | SubcollectionProps;
+
+const customCollectionLayouts = import.meta.glob<{ default: typeof DefaultCollectionLayout }>(
+	'../../layouts/writing-collections/*.astro',
+	{ eager: true },
+);
+
+export async function getStaticPaths() {
+	const [posts, subcollections] = await Promise.all([
+		getWritingPosts(),
+		getWritingSubcollections(),
+	]);
+	const postPaths = posts.map((post) => ({
+		params: { slug: post.id },
+		props: { kind: 'post' as const, post, subcollections },
+	}));
+	const subcollectionPaths = getSubcollectionSlugs(posts, subcollections).map((subcollectionSlug) => ({
+		params: { slug: subcollectionSlug },
+		props: {
+			kind: 'subcollection' as const,
+			subcollectionSlug,
+			collection: subcollections.find(({ id }) => id === subcollectionSlug),
+			posts: posts.filter((post) => getSubcollectionSlug(post) === subcollectionSlug),
+			subcollections,
+		},
+	}));
+
+	return [...postPaths, ...subcollectionPaths];
+}
+
+const props: Props = Astro.props;
+const post = props.kind === 'post' ? props.post : undefined;
+const subcollections = props.subcollections;
+const subcollectionSlug = props.kind === 'subcollection' ? props.subcollectionSlug : undefined;
+const subcollection = props.kind === 'subcollection' ? props.collection : undefined;
+const subcollectionPosts = props.kind === 'subcollection' ? props.posts : undefined;
+const subcollectionTitle = subcollection?.data.title
+	?? (subcollectionSlug ? formatSubcollectionName(subcollectionSlug) : undefined);
+const subcollectionDescription = subcollection?.data.description
+	?? (subcollectionTitle ? `Updates and notes from ${subcollectionTitle}.` : undefined);
+
+const postRendered = post ? await render(post) : undefined;
+const Content = postRendered?.Content;
+const collectionRendered = subcollection ? await render(subcollection) : undefined;
+const Intro = collectionRendered?.Content;
+const hasCustomIntro = Boolean(subcollection?.body?.trim());
+const customLayoutPath = subcollectionSlug
+	? `../../layouts/writing-collections/${subcollectionSlug}.astro`
+	: undefined;
+const CollectionLayout = customLayoutPath
+	? customCollectionLayouts[customLayoutPath]?.default ?? DefaultCollectionLayout
+	: DefaultCollectionLayout;
+---
+
+{
+	post && Content ? (
+		<WritingPostLayout {post} {subcollections}>
+			<Content />
+		</WritingPostLayout>
+	) : subcollectionSlug && subcollectionTitle && subcollectionDescription && subcollectionPosts ? (
+		<CollectionLayout
+			slug={subcollectionSlug}
+			title={subcollectionTitle}
+			description={subcollectionDescription}
+			posts={subcollectionPosts}
+			collection={subcollection}
+			{subcollections}
+			{hasCustomIntro}
+		>
+			{Intro && hasCustomIntro && <Intro slot="intro" />}
+		</CollectionLayout>
+	) : null
+}

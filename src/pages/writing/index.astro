@@ -1,0 +1,50 @@
+---
+import WritingList from '../../components/WritingList.astro';
+import WritingShell from '../../components/WritingShell.astro';
+import {
+	getSubcollectionSlugs,
+	getSubcollectionTitle,
+	getWritingPosts,
+	getWritingSubcollections,
+} from '../../lib/writing';
+
+const [posts, subcollections] = await Promise.all([
+	getWritingPosts(),
+	getWritingSubcollections(),
+]);
+const collectionLinks = getSubcollectionSlugs(posts, subcollections).map((slug) => {
+	const collection = subcollections.find(({ id }) => id === slug);
+	const title = getSubcollectionTitle(slug, subcollections);
+	return {
+		slug,
+		title,
+		description: collection?.data.description ?? `Updates and notes from ${title}.`,
+	};
+});
+---
+
+<WritingShell
+	title="Writing — Idan Gazit"
+	description="Notes on design, technology, and making things by Idan Gazit."
+>
+	<header class="pt-[clamp(3.5rem,10vw,7rem)] pb-12">
+		<h1 class="m-0 text-[clamp(2.75rem,10vw,5.5rem)] leading-[0.95] font-medium tracking-[-0.035em] text-primary-50">Writing</h1>
+		<p class="mt-5 mb-0 max-w-[34rem] text-xl leading-[1.5] text-primary-300">Notes on design, technology, and making things.</p>
+	</header>
+	{
+		collectionLinks.length > 0 && (
+			<nav class="py-8" aria-labelledby="collections-heading">
+				<h2 id="collections-heading" class="m-0 font-sans text-xs font-normal uppercase tracking-[0.14em] text-primary-400">Collections</h2>
+				<ul class="mt-4 mb-0 grid list-none gap-6 p-0">
+					{collectionLinks.map((collection) => (
+						<li class="max-w-[42rem]">
+							<a class="text-xl no-underline" href={`/writing/${collection.slug}/`}>{collection.title}</a>
+							<p class="mt-1 mb-0 text-lg leading-[1.45] italic text-primary-300">{collection.description}</p>
+						</li>
+					))}
+				</ul>
+			</nav>
+		)
+	}
+	<WritingList {posts} {subcollections} />
+</WritingShell>

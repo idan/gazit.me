@@ -1,0 +1,50 @@
+---
+import BaseHead from './BaseHead.astro';
+import { SITE_TITLE } from '../consts';
+
+interface Props {
+	title: string;
+	description: string;
+	pageType?: 'website' | 'article';
+	subcollection?: {
+		title: string;
+		slug: string;
+	};
+}
+
+const { title, description, pageType = 'website', subcollection } = Astro.props;
+const scopedFeed = subcollection
+	? {
+			title: `${subcollection.title} — Writing by Idan Gazit`,
+			href: `/writing/${subcollection.slug}/feed.xml`,
+		}
+	: undefined;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} pageType={pageType} feeds={scopedFeed ? [scopedFeed] : []} />
+	</head>
+	<body>
+		<header>
+			<div class="mx-auto flex min-h-18 w-[calc(100%_-_2rem)] max-w-3xl items-center">
+				<h2 class="m-0 w-full text-center font-sans text-sm font-normal uppercase tracking-wider text-primary-400 sm:text-left lg:text-base">
+					<a class="font-normal text-primary-50 no-underline" href="/">{SITE_TITLE}</a> makes things for<br class="sm:hidden" /> people who make things.
+				</h2>
+			</div>
+		</header>
+
+		<main class="mx-auto min-h-[calc(100vh_-_11rem)] w-[calc(100%_-_2rem)] max-w-3xl">
+			<slot />
+		</main>
+
+		<footer class="mx-auto flex w-[calc(100%_-_2rem)] max-w-3xl items-center justify-between gap-6 border-t border-primary-800 py-5 font-sans text-sm font-normal uppercase tracking-widest text-primary-400 max-[32rem]:items-start">
+			<div class="flex flex-wrap max-[32rem]:gap-y-1">
+				<span class="whitespace-nowrap pr-5">© {new Date().getFullYear()} Idan Gazit</span>
+				<span class="whitespace-nowrap">All rights reserved</span>
+			</div>
+			<a class="font-normal no-underline" href="/writing/feed.xml">RSS</a>
+		</footer>
+	</body>
+</html>

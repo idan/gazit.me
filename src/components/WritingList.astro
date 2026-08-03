@@ -1,0 +1,45 @@
+---
+import FormattedDate from './FormattedDate.astro';
+import type { WritingPost, WritingSubcollection } from '../lib/writing';
+import {
+	getSubcollectionSlug,
+	getSubcollectionTitle,
+	getWritingPostUrl,
+} from '../lib/writing';
+
+interface Props {
+	posts: WritingPost[];
+	subcollections?: WritingSubcollection[];
+}
+
+const { posts, subcollections = [] } = Astro.props;
+---
+
+{
+	posts.length > 0 ? (
+		<ol class="m-0 list-none p-0">
+			{posts.map((post) => {
+				const subcollection = getSubcollectionSlug(post);
+				return (
+					<li class="py-8">
+						<div class="mb-[0.45rem] flex gap-2 font-sans text-xs uppercase tracking-[0.1em] text-primary-400">
+							<FormattedDate date={post.data.pubDate} />
+							{subcollection && (
+								<>
+									<span aria-hidden="true">·</span>
+									<a class="text-primary-300 no-underline" href={`/writing/${subcollection}/`}>
+										{getSubcollectionTitle(subcollection, subcollections)}
+									</a>
+								</>
+							)}
+						</div>
+						<h2 class="m-0 text-[clamp(1.55rem,5vw,2rem)] font-medium leading-[1.15]"><a class="no-underline" href={getWritingPostUrl(post)}>{post.data.title}</a></h2>
+						<p class="mt-[0.65rem] mb-0 max-w-[40rem] text-[1.05rem] leading-[1.55] text-primary-300">{post.data.description}</p>
+					</li>
+				);
+			})}
+		</ol>
+	) : (
+		<p class="my-0 py-12 text-[1.05rem] leading-[1.55] text-primary-300">Nothing here yet. Check back soon.</p>
+	)
+}

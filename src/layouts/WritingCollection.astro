@@ -1,0 +1,33 @@
+---
+import type { WritingPost, WritingSubcollection } from '../lib/writing';
+import WritingList from '../components/WritingList.astro';
+import WritingShell from '../components/WritingShell.astro';
+
+interface Props {
+	slug: string;
+	title: string;
+	description: string;
+	posts: WritingPost[];
+	collection?: WritingSubcollection;
+	subcollections: WritingSubcollection[];
+	hasCustomIntro: boolean;
+}
+
+const { slug, title, description, posts, subcollections, hasCustomIntro } = Astro.props;
+---
+
+<WritingShell
+	title={`${title} — Writing by Idan Gazit`}
+	{description}
+	subcollection={{ slug, title }}
+>
+	<header class="pt-[clamp(3.5rem,10vw,7rem)] pb-12">
+		<p class="mt-0 mb-3 font-sans text-xs uppercase tracking-[0.14em] text-primary-400"><a class="no-underline" href="/writing/">Writing</a> / Collection</p>
+		<h1 class="m-0 text-[clamp(3rem,11vw,5.5rem)] leading-[0.98] font-medium tracking-[-0.035em] text-primary-50">{title}</h1>
+		<div class="mt-6 max-w-[42rem] text-xl leading-[1.5] text-primary-300 [&_blockquote]:m-0 [&_blockquote]:border-l-[3px] [&_blockquote]:border-primary-600 [&_blockquote]:pl-5 [&_blockquote]:italic">
+			{hasCustomIntro ? <slot name="intro" /> : <p class="m-0">{description}</p>}
+		</div>
+		<a class="mt-6 inline-block font-sans text-xs uppercase tracking-[0.08em] no-underline" href={`/writing/${slug}/feed.xml`}>Subscribe to this collection’s RSS feed</a>
+	</header>
+	<WritingList {posts} {subcollections} />
+</WritingShell>

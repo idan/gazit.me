@@ -50,9 +50,8 @@ import idanImage from '../assets/idan.jpg';
 
 						</div>
 			
-						<p class="pb-3 font-sans uppercase social text-sm tracking-wider font-normal">
-						
-						
+						<p class="pb-3 font-sans text-sm font-normal uppercase tracking-wider [&_a]:font-normal">
+						<a href="/writing/">Writing</a> &middot;{' '}
 						<a
 							href="https://bsky.app/profile/gazit.me"
 							rel="me"
@@ -84,7 +83,7 @@ import idanImage from '../assets/idan.jpg';
 						As a principal engineer at{' '}
 						<a class="link" href="https://heroku.com">Heroku</a>, 
 						I started the Data UX team, which crafted the human interfaces to Heroku’s data offerings (Postgres, Redis, Kafka, and Cassandra).
-						Prior to that, I led the design of
+						Prior to that, I led the design of{' '}
 						<a href="https://devcenter.heroku.com/articles/metrics">Heroku App Metrics</a>, 
 						which visualized app performance while addressing customer
 						complaints about the opacity of Heroku.
@@ -162,10 +161,3 @@ playEl.addEventListener('click', function() {
 	audio.play();
 });
 </script>
-
-<style lang="postcss">
-	@reference "tailwindcss";
-	a[rel="me"] {
-		@apply font-normal;
-	}
-</style>

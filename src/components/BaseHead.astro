@@ -3,15 +3,32 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 
+interface FeedLink {
+	title: string;
+	href: string;
+}
+
 interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	pageType?: 'website' | 'article';
+	feeds?: FeedLink[];
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/idan.jpg' } = Astro.props;
+const {
+	title,
+	description,
+	image = '/images/idan.jpg',
+	pageType = 'website',
+	feeds = [],
+} = Astro.props;
+const feedLinks = [
+	{ title: 'Writing by Idan Gazit', href: '/writing/feed.xml' },
+	...feeds.filter(({ href }) => href !== '/writing/feed.xml'),
+];
 ---
 
 <!-- Global Metadata -->
@@ -27,8 +44,18 @@ const { title, description, image = '/idan.jpg' } = Astro.props;
 <link rel="preload" href="/fonts/ParcloSerif-Medium.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/fonts/ParcloSerif-LightItalic.woff2" as="font" type="font/woff2" crossorigin />
 
-<!-- Canonical URL -->
+<!-- Canonical URL and feeds -->
 <link rel="canonical" href={canonicalURL} />
+{
+	feedLinks.map((feed) => (
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title={feed.title}
+			href={new URL(feed.href, Astro.site)}
+		/>
+	))
+}
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -36,7 +63,7 @@ const { title, description, image = '/idan.jpg' } = Astro.props;
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
+<meta property="og:type" content={pageType} />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
@@ -50,4 +77,4 @@ const { title, description, image = '/idan.jpg' } = Astro.props;
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
 <!-- Analytics -->
-<script defer data-domain="gazit.me" src="http://analytics.gazit.me/js/script.js"></script>
+<script is:inline defer data-domain="gazit.me" src="https://analytics.gazit.me/js/script.js"></script>

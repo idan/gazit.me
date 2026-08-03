@@ -1,16 +1,32 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
-const projects = defineCollection({
-	loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+const writing = defineCollection({
+	loader: glob({
+		pattern: ['**/*.{md,mdx}', '!**/_collection.{md,mdx}'],
+		base: './src/content/writing',
+	}),
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
-		// Transform string to Date object
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
+		draft: z.boolean().default(false),
 	}),
 });
 
-export const collections = { projects };
+const writingCollections = defineCollection({
+	loader: glob({
+		pattern: '**/_collection.{md,mdx}',
+		base: './src/content/writing',
+		generateId: ({ entry }) => entry.split('/').slice(0, -1).join('/'),
+	}),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+	}),
+});
+
+export const collections = { writing, writingCollections };
