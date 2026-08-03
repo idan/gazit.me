@@ -29,5 +29,5 @@ const { slug, title, description, posts, subcollections, hasCustomIntro } = Astr
 		</div>
 		<a class="mt-6 inline-block font-sans text-xs uppercase tracking-[0.08em] no-underline" href={`/writing/${slug}/feed.xml`}>Subscribe to this collection’s RSS feed</a>
 	</header>
-	<WritingList {posts} {subcollections} />
+	<WritingList {posts} {subcollections} showCollection={false} />
 </WritingShell>

@@ -1,4 +1,5 @@
 import type { SvgComponent } from 'astro/types';
+import CardsThreeRegular from '@phosphor-icons/core/regular/cards-three.svg';
 import SpeakerHighRegular from '@phosphor-icons/core/regular/speaker-high.svg';
 
 export const PHOSPHOR_WEIGHTS = [
@@ -20,6 +21,9 @@ export type PhosphorWeight = (typeof PHOSPHOR_WEIGHTS)[number];
  * included in the browser build.
  */
 export const phosphorIcons = {
+	'cards-three': {
+		regular: CardsThreeRegular,
+	},
 	'speaker-high': {
 		regular: SpeakerHighRegular,
 	},

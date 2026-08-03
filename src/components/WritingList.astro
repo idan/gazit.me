@@ -1,5 +1,6 @@
 ---
 import FormattedDate from './FormattedDate.astro';
+import PhosphorIcon from './PhosphorIcon.astro';
 import type { WritingPost, WritingSubcollection } from '../lib/writing';
 import {
 	getSubcollectionSlug,
@@ -10,9 +11,10 @@ import {
 interface Props {
 	posts: WritingPost[];
 	subcollections?: WritingSubcollection[];
+	showCollection?: boolean;
 }
 
-const { posts, subcollections = [] } = Astro.props;
+const { posts, subcollections = [], showCollection = true } = Astro.props;
 ---
 
 {
@@ -22,15 +24,13 @@ const { posts, subcollections = [] } = Astro.props;
 				const subcollection = getSubcollectionSlug(post);
 				return (
 					<li class="py-8">
-						<div class="mb-[0.45rem] flex gap-2 font-sans text-xs uppercase tracking-[0.1em] text-primary-400">
+						<div class="mb-[0.45rem] flex items-center gap-2 font-sans text-xs uppercase tracking-[0.1em] text-primary-400">
 							<FormattedDate date={post.data.pubDate} />
-							{subcollection && (
-								<>
-									<span aria-hidden="true">·</span>
-									<a class="text-primary-300 no-underline" href={`/writing/${subcollection}/`}>
-										{getSubcollectionTitle(subcollection, subcollections)}
-									</a>
-								</>
+							{subcollection && showCollection && (
+								<a class="flex items-center gap-1.5 text-primary-300 no-underline" href={`/writing/${subcollection}/`}>
+									<PhosphorIcon name="cards-three" size={14} />
+									<span>{getSubcollectionTitle(subcollection, subcollections)}</span>
+								</a>
 							)}
 						</div>
 						<h2 class="m-0 text-[clamp(1.55rem,5vw,2rem)] font-medium leading-[1.15]"><a class="no-underline" href={getWritingPostUrl(post)}>{post.data.title}</a></h2>
